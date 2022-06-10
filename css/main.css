@@ -22,8 +22,15 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 h1,
@@ -38,6 +45,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -63,12 +71,28 @@ img {
 }
 
 .container {
-  /* outline: 1px solid tomato; */
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -595,22 +619,48 @@ img {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.benefits-section {
-  padding-bottom: 0;
-}
-
-.benefits__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .benefits__item {
-  width: 270px;
-  margin-right: 30px;
+  width: 100%;
+}
+
+@media screen and (max-width: 767.98px) {
+  .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: 354px;
+  }
+  .benefits__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .benefits__item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 270px;
+  }
+  .benefits__item:nth-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  .benefits__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .benefits__icon {
@@ -637,6 +687,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .benefits__subtitle {
+    text-align: center;
+  }
 }
 
 .benefits__text-subtitle {
