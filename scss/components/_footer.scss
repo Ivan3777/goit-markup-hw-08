@@ -65,7 +65,27 @@ margin-bottom: 9px;
 
 .social-container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+      align-items: baseline;
+
+      flex-direction: row;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+}
+
+.footer-socials {
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+      }
 }
 
 .text-footer {
@@ -110,7 +130,11 @@ margin-bottom: 9px;
 //   subscribe
 
 .subscribe {
-    margin-left: auto;
+
+    @include mq(desctop) {
+        margin-left: 93px;
+    }
+    
 }
 
 .text-subscribe {
@@ -130,6 +154,13 @@ margin-bottom: 9px;
 
 .subscribe-form {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include mq(desctop) {
+      flex-direction: row;
+    }
 }
 
 .subscribe-label {

@@ -23,13 +23,57 @@
 }
 
 .list-team {
-    display: flex;
-    justify-content: center;
+
+    @include mq(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
-.card-team:not(:last-child) {
-    margin-right: 30px;
+.card-team {
+
+    width: 100%;
+
+    @include mq(mobile-only) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  
+    @include mq(tablet) {
+      width: 354px;
+  
+      &:nth-child(odd) {
+        margin-right: 30px;
+      }
+  
+      &:nth-child(-n + 2) {
+        margin-bottom: 30px;
+      }
+    }
+  
+    @include mq(desctop) {
+      width: 270px;
+  
+      &:nth-child(-n + 2) {
+        margin-bottom: 0;
+      }
+  
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
 }
+
+// .list-team {
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .card-team:not(:last-child) {
+//     margin-right: 30px;
+// }
 
 .subtitle-name {
     color: var(--color-h2-h3);

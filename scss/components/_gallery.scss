@@ -1,5 +1,12 @@
 //  section gallery
 
+.gallery-section {
+
+  @include mq(not-desctop) {
+    display: none;
+  }
+}
+
 .gallery__subtitle {
     color: var(--link-color);
     font-weight: 700;
