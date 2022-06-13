@@ -18,44 +18,54 @@
 }
 
 .list-clients {
-    margin: 0;
-    padding-inline-start: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    cursor: pointer;
-    flex-wrap: wrap;
+  margin: 0;
+  padding-inline-start: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+  flex-wrap: wrap;
 }
 
 .client {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover {
-        border: 1px solid var(--color-hover);
-    }
+    &:hover,
+    &:focus {
+      border-color: #2196f3;
+}
 
-    @include mq(mobile-only) {
-        width: 210px;
-        height: 92px;
-      }
-    
-      @include mq(tablet) {
-        width: 226px;
-        height: 92px;
-      }
-    
-      @include mq(desctop) {
-        flex-basis: calc((100% - 5 * 30px) / 6);
-      }
+@include mq(mobile-only) {
+    width: calc((100% - 30px) / 2);
+    height: 92px;
+  }
+
+  @include mq(tablet) {
+    width: 226px;
+    height: 92px;
+  }
+
+  @include mq(desctop) {
+    flex-basis: calc((100% - 5 * 30px) / 6);
+  }
+}
+
+.client:hover .icon-client,
+.client:focus .icon-client {
+    fill: #2196f3;
+}
+
+.icon-client {
+    fill: #afb1b8;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-client {
@@ -64,12 +74,6 @@
     &:focus .icon-client {
         fill: var(--color-hover);
     }
-}
-
-.icon-client {
-    fill: #afb1b8;
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 // .list-clients {
@@ -82,25 +86,20 @@
 //     margin-right: 30px;
 // }
 
-// .clients {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-// }
-
 // .link-client {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 170px;
-//     height: 92px;
-//     border: 1px solid #afb1b8;
-//     border-radius: 4px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // width: 170px;
+    // height: 92px;
+    // border: 1px solid #afb1b8;
+    // border-radius: 4px;
 
-//     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-//     &:hover {
-//         border: 1px solid var(--color-hover);
-//     }
+    // &:hover {
+    //     border: 1px solid var(--color-hover);
+    // }
 // }
 
 
