@@ -80,21 +80,27 @@
 // contacts
 
 .header-contacts {
-    display: flex;
 
     margin-left: auto;
 
     @include mq(mobile-only) {
         display: none;
     }
+
+    @include mq(desctop) {
+        display: flex;
+    }
 }
 
 .header-contacts__item {
-    margin-right: 50px;
+
+    @include mq(desctop) {
+        margin-right: 50px;
+    }
 }
 
 .header-contacts__item:last-child {
-    margin-right: 0px;
+    margin-right: 0px; 
 }
 
 .header-contacts__mail {
@@ -115,6 +121,11 @@
     &:hover,
     &:focus {
         color: var(--color-hover);
+    }
+
+    @include mq(tablet-only) {
+        padding-top: 0px;
+        padding-bottom: 10px;
     }
 }
 
@@ -137,9 +148,18 @@
     &:focus {
         color: var(--color-hover);
     }
+
+    @include mq(tablet-only) {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 }
 
 .header-contacts__icon {
     margin-right: 10px;
     fill: currentColor;
+
+    @include mq(tablet-only) {
+        margin-right: 8px;
+    }
 }

@@ -2,9 +2,24 @@
 
 .list-button {
     display: flex;
-    justify-content: center;
-
+    
     margin-bottom: 50px;
+
+    @include mq(mobile-only) {
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    @include mq(tablet) {
+        justify-content: center;
+    }
+}
+
+.list-btn:nth-child(-n + 3) {
+    
+    @include mq(mobile-only) {
+        margin-bottom: 15px;
+    }
 }
 
 .list-btn:not(:last-child) {
