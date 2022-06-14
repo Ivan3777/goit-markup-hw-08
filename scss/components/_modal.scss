@@ -18,8 +18,7 @@
     top: 50%;
     left: 50%;
 
-    width: 528px;
-    height: 581px;
+    max-width: 95%;
     padding: 40px;
 
     background-color: #ffffff;
@@ -29,6 +28,14 @@
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include mq(not-desctop) {
+        width: 450px;
+    }
+
+    @include mq(desctop) {
+        width: 528px;
+    }
 }
 
 .backdrop {
@@ -264,6 +271,11 @@
 
     color: #757575;
     cursor: pointer;
+
+    @include mq(not-desctop) {
+        font-size: 12px;
+        line-height: 1.6;
+    }
 }
 
 .checkbox-text-link {
