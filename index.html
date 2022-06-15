@@ -30,7 +30,7 @@
         <a class="logo link" lang="en" href="./index.html"
           >Web<span class="logo__text logo__text--black">Studio</span></a
         >
-        
+
         <nav class="navigation">
           <ul class="navigation__list list">
             <li class="navigation__item">
@@ -42,7 +42,7 @@
             <li class="navigation__item"><a class="navigation__link link" href="">Контакты</a></li>
           </ul>
         </nav>
-        
+
         <ul class="header-contacts list">
           <li class="header-contacts__item">
             <a class="header-contacts__mail link" href="mailto:nfo@devstudio.com">
@@ -69,7 +69,7 @@
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="button-title-hero" type="button" data-modal-open>Заказать услугу</button>
-          
+
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="modal-btn" data-modal-close>
@@ -77,7 +77,7 @@
                   <use href="./images/icons.svg#close"></use>
                 </svg>
               </button>
-              
+
               <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
               <form class="form">
                 <label class="form-label">
@@ -196,15 +196,42 @@
           <h2 class="gallery__subtitle">Чем мы занимаемся</h2>
           <ul class="gallery__list list">
             <li class="gallery__item">
-              <img src="./images/keyboard.jpg" alt="" width="370" />
+              <img
+                srcset="
+                  ./images/gallery/keyboard-desc.jpg    370w,
+                  ./images/gallery/keyboard-desc@2x.jpg 740w
+                "
+                src="./images/gallery/keyboard-desc.jpg"
+                alt="Десктопные приложения"
+                sizes="(min-width: 1200px) 370px"
+                loading="lazy"
+              />
               <p class="gallery__text">Десктопные приложения</p>
             </li>
             <li class="gallery__item">
-              <img src="./images/phone.jpg" alt="" width="370" />
+              <img
+                srcset="
+                  ./images/gallery/phone-desc.jpg    370w,
+                  ./images/gallery/phone-desc@2x.jpg 740w
+                "
+                src="./images/gallery/phone-desc.jpg"
+                alt="Мобильные приложения"
+                sizes="(min-width: 1200px) 370px"
+                loading="lazy"
+              />
               <p class="gallery__text">Мобильные приложения</p>
             </li>
             <li class="gallery__item">
-              <img src="./images/tablet.jpg" alt="" width="370" />
+              <img
+                srcset="
+                  ./images/gallery/tablet-desc.jpg    370w,
+                  ./images/gallery/tablet-desc@2x.jpg 740w
+                "
+                src="./images/gallery/tablet-desc.jpg"
+                alt="Дизайнерские решения"
+                sizes="(min-width: 1200px) 370px"
+                loading="lazy"
+              />
               <p class="gallery__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -216,7 +243,21 @@
           <h2 class="subtitle-team">Наша команда</h2>
           <ul class="list-team list">
             <li class="card-team">
-              <img class="team-image" src="./images/igor.jpg" alt="" width="270" />
+              <img
+                class="team-image"
+                srcset="
+                  ./images/team/desctop/igor-desc.jpg    270w,
+                  ./images/team/tablet/igor-tab.jpg      354w,
+                  ./images/team/mobile/igor-mob.jpg      450w,
+                  ./images/team/desctop/igor-desc@2x.jpg 540w,
+                  ./images/team/tablet/igor-tab@2x.jpg   708w,
+                  ./images/team/mobile/igor-mob@2x.jpg   900w
+                "
+                src="./images/team/mobile/igor-mob.jpg"
+                alt="человек"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px 100vw"
+                loading="lazy"
+              />
               <div class="command-description">
                 <h3 class="subtitle-name">Игорь Демьяненко</h3>
                 <p class="text-team" lang="en">Product Designer</p>
@@ -277,7 +318,21 @@
               </div>
             </li>
             <li class="card-team">
-              <img class="team-image" src="./images/olga.jpg" alt="" width="270" />
+              <img
+                class="team-image"
+                srcset="
+                  ./images/team/desctop/olga-desc.jpg    270w,
+                  ./images/team/tablet/olga-tab.jpg      354w,
+                  ./images/team/mobile/olga-mob.jpg      450w,
+                  ./images/team/desctop/olga-desc@2x.jpg 540w,
+                  ./images/team/tablet/olga-tab@2x.jpg   708w,
+                  ./images/team/mobile/olga-mob@2x.jpg   900w
+                "
+                src="./images/team/mobile/olga-mob.jpg"
+                alt="человек"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px 100vw"
+                loading="lazy"
+              />
               <div class="command-description">
                 <h3 class="subtitle-name">Ольга Репина</h3>
                 <p class="text-team" lang="en">Frontend Developer</p>
@@ -338,7 +393,21 @@
               </div>
             </li>
             <li class="card-team">
-              <img class="team-image" src="./images/nikolai.jpg" alt="" width="270" />
+              <img
+                class="team-image"
+                srcset="
+                  ./images/team/desctop/nikolai-desc.jpg    270w,
+                  ./images/team/tablet/nikolai-tab.jpg      354w,
+                  ./images/team/mobile/nikolai-mob.jpg      450w,
+                  ./images/team/desctop/nikolai-desc@2x.jpg 540w,
+                  ./images/team/tablet/nikolai-tab@2x.jpg   708w,
+                  ./images/team/mobile/nikolai-mob@2x.jpg   900w
+                "
+                src="./images/team/mobile/nikolai-mob.jpg"
+                alt="человек"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px 100vw"
+                loading="lazy"
+              />
               <div class="command-description">
                 <h3 class="subtitle-name">Николай Тарасов</h3>
                 <p class="text-team" lang="en">Marketing</p>
@@ -399,7 +468,21 @@
               </div>
             </li>
             <li class="card-team">
-              <img class="team-image" src="./images/michail.jpg" alt="" width="270" />
+              <img
+                class="team-image"
+                srcset="
+                  ./images/team/desctop/michail-desc.jpg    270w,
+                  ./images/team/tablet/michail-tab.jpg      354w,
+                  ./images/team/mobile/michail-mob.jpg      450w,
+                  ./images/team/desctop/michail-desc@2x.jpg 540w,
+                  ./images/team/tablet/michail-tab@2x.jpg   708w,
+                  ./images/team/mobile/michail-mob@2x.jpg   900w
+                "
+                src="./images/team/mobile/michail-mob.jpg"
+                alt="человек"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px 100vw"
+                loading="lazy"
+              />
               <div class="command-description">
                 <h3 class="subtitle-name">Михаил Ермаков</h3>
                 <p class="text-team" lang="en">UI Designer</p>
