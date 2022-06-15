@@ -130,27 +130,8 @@ img {
   color: var(--footer-studio);
 }
 
-.scroll-up {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  width: 70px;
-  height: 70px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.scroll-icon {
-  fill: var(--color-hover);
-}
-
-.scroll-up:hover .scroll-icon {
-  fill: var(--button-hover);
-}
-
 .header {
+  position: relative;
   background-color: #ffffff;
   border-bottom: 1px solid var(--border-color);
 }
@@ -325,6 +306,58 @@ img {
   .header-contacts__icon {
     margin-right: 8px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-btn .icon-close {
+  display: none;
+}
+
+.menu-btn.is-open .icon-close {
+  display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFFFFF;
+  padding: 48px 83px 48px 40px;
+}
+
+.menu-container.is-open {
+  display: block;
 }
 
 .section-hero {

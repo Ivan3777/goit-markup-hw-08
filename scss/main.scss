@@ -6,12 +6,11 @@
 @import './utils/hidden';
 @import './utils/container';
 @import './utils/logo';
-@import './utils/btn-scroll';
-
 
 // components
 
 @import './components/header';
+@import './components/mobile-menu';
 @import './components/hero';
 @import './components/modal';
 @import './components/benefits';
@@ -21,6 +20,8 @@
 @import './components/footer';
 @import './components/filter';
 @import './components/cards';
+
+
 
 
 

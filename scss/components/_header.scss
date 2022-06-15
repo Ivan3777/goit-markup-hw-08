@@ -1,9 +1,13 @@
 .header {
+position: relative;
+
     background-color: #ffffff;
     border-bottom: 1px solid var(--border-color);
 }
 
 .header__container {
+    // position: relative;
+
     display: flex;
     align-items: center;
 }
