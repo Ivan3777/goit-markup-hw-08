@@ -20,6 +20,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+    overflow: auto;
     padding: 48px 40px 48px 40px;
 
     background-color: #FFFFFF;
@@ -41,7 +42,7 @@
   }
 
   .menu-mobile__list {
-    margin-bottom: 160px;
+    margin-bottom: 302px;
   }
 
   .menu-mobile__item {
@@ -73,7 +74,7 @@
  .menu-contacts__list {
     display: block;
 
-    margin-bottom: 55px;
+    margin-bottom: 64px;
  }
 
  .menu-contacts__item:not(:last-child) {
@@ -110,6 +111,8 @@
    
     .menu-socials__list {
        display: flex;
+
+
     }
 
     .menu-socials__item {
