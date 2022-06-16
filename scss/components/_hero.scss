@@ -30,6 +30,14 @@
         padding-bottom: 118px;
     }
 
+    @include mq (not-desktop){
+        height: 400px;
+    }
+    @include mq (desktop){
+        max-width: 1600px;
+        height: 600px;
+    }
+
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/hero/hero-mob.jpg');
 
@@ -59,11 +67,6 @@
     url('../images/hero/hero-desc@2x.jpg');
     }
     }
-
-    // @include mq(desctop) {
-    //     padding-top: 200px;
-    //     padding-bottom: 200px;
-    // }
 }
 
 .hero-title {
