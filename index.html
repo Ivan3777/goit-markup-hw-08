@@ -30,63 +30,11 @@
         <a class="logo link" lang="en" href="./index.html"
           >Web<span class="logo__text logo__text--black">Studio</span></a
         >
-        <!-- mobile menu -->
-        <div class="burger">
-          <button
-            type="button"
-            class="menu-btn"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button
-            
-          >
-            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="icon-close" href="./images/icons.svg#icon-close"></use>
-              <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="menu-container" id="menu-container" data-menu>
-          <div class="menu-mobile">
-            <ul class="menu-mobile__list list">
-              <li class="menu-mobile__item">
-                <a class="menu-mobile__link menu-mobile__link--current link" href="">Студия</a>
-              </li>
-              <li class="menu-mobile__item">
-                <a class="menu-mobile__link link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="menu-mobile__item">
-                <a class="menu-mobile__link link" href="">Контакты</a>
-              </li>
-            </ul>
-          </div>
-          <div class="menu-contacts">
-            <ul class="menu-contacts__list list">
-              <li class="menu-contacts__item">
-                <a class="menu-contacts__link link" href="tel:+380961111111">+380961111111</a>
-              </li>
-              <li class="menu-contacts__item">
-                <a class="menu-contacts__link link" href="mailto:nfo@devstudio.com">info@devstudio.com</a>
-              </li>
-            </ul>
-          </div>
-          <div class="menu-socials">
-            <ul class="menu-socials__list list">
-              <li class="menu-socials__item">
-                <a class="menu-socials__link link" href=""><span>Instagram</span></a>
-              </li>
-              <li class="menu-socials__item">
-                <a class="menu-socials__link link" href=""><span>Twitter</span></a>
-              </li>
-              <li class="menu-socials__item">
-                <a class="menu-socials__link link" href=""><span>Facebook</span></a>
-              </li>
-              <li class="menu-socials__item">
-                <a class="menu-socials__link link" href=""><span>LinkedIn</span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <button class="menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <!-- navigation -->
         <nav class="navigation">
           <ul class="navigation__list list">
@@ -745,8 +693,68 @@
         </div>
       </div>
     </footer>
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu js-close-menu">
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <!-- nav -->
+      <ul class="menu-mobile__list list">
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link menu-mobile__link--current link" href="">Студия</a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link link" href="">Контакты</a>
+        </li>
+      </ul>
+
+      <!-- contacts -->
+
+      <ul class="menu-contacts__list list">
+        <li class="menu-contacts__item">
+          <a class="menu-contacts__link menu-contacts__link--tel link" href="tel:+380961111111"
+            >+380961111111</a
+          >
+        </li>
+        <li class="menu-contacts__item">
+          <a
+            class="menu-contacts__link menu-contacts__link--mail link"
+            href="mailto:nfo@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <!-- socials -->
+
+      <ul class="menu-socials__list list">
+        <li class="menu-socials__item">
+          <a class="menu-socials__link link" href="">Instagram</a>
+        </li>
+        <li class="menu-socials__item">
+          <a class="menu-socials__link link" href="">Twitter</a>
+        </li>
+        <li class="menu-socials__item">
+          <a class="menu-socials__link link" href="">Facebook</a>
+        </li>
+        <li class="menu-socials__item">
+          <a class="menu-socials__link link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <!-- js -->
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
