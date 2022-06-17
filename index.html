@@ -31,7 +31,7 @@
           >Web<span class="logo__text logo__text--black">Studio</span></a
         >
         <button class="menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <svg class="icon-open" width="40" height="40" aria-label="Переключатель мобильного меню">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
@@ -696,56 +696,56 @@
     <!-- mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu js-close-menu">
-        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+        <svg class="icon-close" width="40" height="40" aria-label="Переключатель мобильного меню">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
       <!-- nav -->
-      <ul class="menu-mobile__list list">
-        <li class="menu-mobile__item">
-          <a class="menu-mobile__link menu-mobile__link--current link" href="">Студия</a>
-        </li>
-        <li class="menu-mobile__item">
-          <a class="menu-mobile__link link" href="./portfolio.html">Портфолио</a>
-        </li>
-        <li class="menu-mobile__item">
-          <a class="menu-mobile__link link" href="">Контакты</a>
-        </li>
-      </ul>
-
+      <div class="menu-mobile">
+        <ul class="menu-mobile__list list">
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link menu-mobile__link--current link" href="">Студия</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link link" href="">Контакты</a>
+          </li>
+        </ul>
+      </div>
       <!-- contacts -->
-
-      <ul class="menu-contacts__list list">
-        <li class="menu-contacts__item">
-          <a class="menu-contacts__link menu-contacts__link--tel link" href="tel:+380961111111"
-            >+380961111111</a
-          >
-        </li>
-        <li class="menu-contacts__item">
-          <a
-            class="menu-contacts__link menu-contacts__link--mail link"
-            href="mailto:nfo@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-      </ul>
-
-      <!-- socials -->
-
-      <ul class="menu-socials__list list">
-        <li class="menu-socials__item">
-          <a class="menu-socials__link link" href="">Instagram</a>
-        </li>
-        <li class="menu-socials__item">
-          <a class="menu-socials__link link" href="">Twitter</a>
-        </li>
-        <li class="menu-socials__item">
-          <a class="menu-socials__link link" href="">Facebook</a>
-        </li>
-        <li class="menu-socials__item">
-          <a class="menu-socials__link link" href="">LinkedIn</a>
-        </li>
-      </ul>
+      <div class="menu-social">
+        <ul class="menu-contacts__list list">
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link menu-contacts__link--tel link" href="tel:+380961111111"
+              >+380961111111</a
+            >
+          </li>
+          <li class="menu-contacts__item">
+            <a
+              class="menu-contacts__link menu-contacts__link--mail link"
+              href="mailto:nfo@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <!-- socials -->
+        <ul class="menu-socials__list list">
+          <li class="menu-socials__item">
+            <a class="menu-socials__link link" href="">Instagram</a>
+          </li>
+          <li class="menu-socials__item">
+            <a class="menu-socials__link link" href="">Twitter</a>
+          </li>
+          <li class="menu-socials__item">
+            <a class="menu-socials__link link" href="">Facebook</a>
+          </li>
+          <li class="menu-socials__item">
+            <a class="menu-socials__link link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- js -->
     <script src="./js/modal.js"></script>

@@ -331,11 +331,20 @@ img {
 
 .menu-container {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  overflow: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 48px 40px 48px 40px;
   background-color: #FFFFFF;
   z-index: 999;
@@ -358,12 +367,13 @@ img {
   right: 15px;
 }
 
-.menu-mobile__list {
-  margin-bottom: 302px;
+.menu-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .menu-mobile__item {
-  display: block;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
@@ -387,7 +397,6 @@ img {
 }
 
 .menu-contacts__list {
-  display: block;
   margin-bottom: 64px;
 }
 
@@ -423,6 +432,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .menu-socials__item {
@@ -449,6 +460,15 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+
+.icon-open, .icon-close {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-open:hover, .icon-open:focus, .icon-close:hover, .icon-close:focus {
+  fill: #2196F3;
 }
 
 .section-hero {
